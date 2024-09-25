@@ -1,0 +1,113 @@
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6; /* light gray background */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        .left {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #000bd4;
+            padding-left: 9%; /* similar to the color of 'Kerem' */
+        }
+
+        .right {
+            display: flex;
+            gap: 60px;
+            font-size: 2rem;
+padding-right: 12%;        }
+
+        .right a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .right a:hover {
+            color: #000bd4;
+            transform: scale(1.2);
+
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+            align-items: center;
+            flex: 1;
+        }
+
+        .main-text {
+            max-width: 50%;
+        }
+
+        .main-text p {
+            font-size: 2.5rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .main-text .highlight {
+            color: #000bd4; /* matching highlight color */
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 4rem;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #040ad3;
+            transform: scale(1.25);
+        }
+
+        .btn-cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cv:hover {
+            background-color: #ffffff;
+            color: #1e01c3;
+            border-color: #1d00c2;
+            transition: all 0.3s ease;
+            transform: scale(1.2);
+
+
+            
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right:100px;
+        }
