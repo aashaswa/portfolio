@@ -22,6 +22,10 @@ nav {
     font-weight: bold;
     color: #000bd4;
     padding-left: 50px;
+    text-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #000bd4;
+    
 }
 
 .right {
@@ -117,10 +121,11 @@ nav {
 
 .skillsets-container h3 {
     font-size: 2rem;
+    text-align: center;
     margin-bottom: 20px;
     color: #333;
-    padding-left:150px;
-    padding-right: 130px;
+    padding-left:90px;
+    padding-right: 90px;
 }
 .skillsets {
     display: flex;
@@ -155,7 +160,7 @@ nav {
     background: none; 
     transition: transform 0.3s ease;
     mix-blend-mode: multiply;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .skill-item img:hover, .tool-item img:hover {
@@ -171,7 +176,47 @@ nav {
     margin: none;
     font-style:italic;
     font-weight: bold;
-    padding-left: 100px;
+    padding-left: 50px;
+}
+.footer {
+    background-color: #343a40;
+    color: white; 
+    padding: 20px 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.footer1, .footer2 {
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.footer1 p, .footer2 p {
+    margin: 0;
+}
+
+.footer2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.footersocials {
+    display: flex; 
+    justify-content: center; /* Center icons horizontally */
+    margin-top: 10px; /* Space above social icons */
+}
+
+.footersocials a {
+    color: white; /* White color for icons */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none; /* No underline */
+}
+
+.footersocials a:hover {
+    color: #007bff; /* Change color on hover */
 }
 /* Small screens (Phones) */
 @media only screen and (max-width: 480px) {
@@ -216,6 +261,7 @@ nav {
     .skill-item img, .tool-item img {
         width: 60px;
         height: 60px;
+        
     }
 
     .btn-download {
@@ -223,8 +269,10 @@ nav {
     }
 
     .btn-cv {
-        padding: 8px 15px;
+        padding: 10px 10px;
         font-size: 1rem;
+        margin-right: 90px;
+        margin-bottom: 50px;
     }
 
     nav {
@@ -235,9 +283,10 @@ nav {
 
     .social-icons a {
         font-size: 3rem;
+        margin: 10px 10px;
     }
-
-    .btn-cv {
-        font-size: 1rem;
+    .skillsets-container h3 {
+        text-align: center;
+        margin-left: 5px;
     }
-}
+   
