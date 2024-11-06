@@ -12,25 +12,29 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: transparent;
+    background-color: rgb(210, 210, 232);
+    border-radius: 40px;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+    margin:  10px 10px 20px 20px;
+    max-width: 1595px;
+    width: 100%;
 }
 
 .left {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #000bd4;
-    padding-left: 50px;
-    text-shadow:
-    0 0 10px #ffffff,
-    0 0 20px #000bd4;
+    padding-left: 70px;
+    padding-right:20px;
+
+
     
 }
 
 .right {
     display: flex;
-    gap: 60px;
+    gap: 30px;
     font-size: 2rem;
     padding-right:100px;
 }
@@ -39,11 +43,14 @@ nav {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .right a:hover {
     color: #000bd4;
     transform: scale(1.2);
+    border-radius: 50px;
+    padding: 5px 5px 5px 5px;
 }
 
 .main-content {
@@ -64,6 +71,8 @@ nav {
 
 .main-text .highlight {
     color: #000bd4;
+    text-decoration: none;
+    transform: 2.9rem;
 }
 
 .social-icons {
@@ -178,6 +187,9 @@ nav {
     font-weight: bold;
     padding-left: 50px;
 }
+main {
+    flex-grow: 1; /* Ensures the main content area takes up remaining space */
+}
 .footer {
     background-color: #343a40;
     color: white; 
@@ -214,11 +226,195 @@ nav {
     margin: 0 10px; /* Spacing between icons */
     text-decoration: none; /* No underline */
 }
+/* this is the about css */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.right-section {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    mix-blend-mode: multiply;
+    border-color: none;
+    box-shadow: none;
+
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    font-size: 1rem;
+}
+
+
+.right-section {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #ccc;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.timeline h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline p,.timeline ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.timeline ul {
+    list-style-type: none;
+}
+
+
 
 .footersocials a:hover {
     color: #007bff; /* Change color on hover */
+
 }
-/* Small screens (Phones) */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    
+}
+
+
+.right-section {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 30%;
+    box-shadow: none;
+}
+
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #ccc;
+}
+
+.timeline-section {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-section h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo-section {
+    margin-right: 15px;
+}
+
+.logo {
+    padding-top:30px;
+    width:90px;
+    mix-blend-mode: multiply;
+}
+.about-heading {
+    font-size: 3rem;
+    color: #007bff; /* Adjust to the shade of blue you want */
+}
+
+.about-paragraph {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left:45px;
+    margin-bottom: 100px;
+}
+.heading-am{
+    font-size: 3.5rem;
+    color: #040ad3;
+    margin-left: 45px;
+    
+}
+
+/* Small screens (
+Phones) */
 @media only screen and (max-width: 480px) {
     .main-content {
         flex-direction: column;
@@ -278,7 +474,9 @@ nav {
     nav {
         flex-direction: column;
         align-items: center;
-        padding: 5px;
+        padding: 5px 5px 5px 5px;
+        margin: 15px 15px 15px 15px;
+        box-shadow: #333;
     }
 
     .social-icons a {
@@ -290,5 +488,71 @@ nav {
         margin-left: 5px;
     }
    
-    
+    /* About section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 20px;
+    padding: 20px;
 }
+
+/* Left and Right sections for larger screens */
+.left-section {
+    flex: 1;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.right-section {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+    .about-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.5rem; /* Increase font size for readability */
+    }
+
+    .right-section {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-pic {
+        width: 80%; /* Reduce profile pic size for small screens */
+        max-width: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-heading {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+    .about-paragraph {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+}
+
